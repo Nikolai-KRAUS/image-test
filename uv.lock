@@ -889,6 +889,20 @@ wheels = [
 ]
 
 [[package]]
+name = "fairmat-readers-xrd"
+version = "0.0.7"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pint" },
+    { name = "xmltodict" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/13/e3/ed8e3e752df895429a1082c4b27a303c8efe2caabe5c74b58b6c216a1587/fairmat_readers_xrd-0.0.7.tar.gz", hash = "sha256:046249b27a52dd4d81a798040bedb37fc20697bfb82e467cafb8abf1e2922f88", size = 6856326, upload-time = "2024-09-11T15:34:28.099Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/b6/f178c199628cfb55799401d5e98f63040ba12f79521eecddb177956ea1ce/fairmat_readers_xrd-0.0.7-py3-none-any.whl", hash = "sha256:d33699a9a086cf34341d057ac224835940cb40d32a65495d6f26f05b79b51428", size = 22308, upload-time = "2024-09-11T15:34:26.204Z" },
+]
+
+[[package]]
 name = "fastapi"
 version = "0.115.11"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -1179,6 +1193,18 @@ source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages
 sdist = { url = "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9", size = 190490, upload-time = "2024-09-15T18:07:39.745Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3", size = 70442, upload-time = "2024-09-15T18:07:37.964Z" },
+]
+
+[[package]]
+name = "igor2"
+version = "0.5.12"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5e/aa/2aadb0fca3dd2361ca6ce613fe4a0827114d63a42956c2b68b3f59f2c784/igor2-0.5.12.tar.gz", hash = "sha256:5a284ac3b7aa6a8a59f28509d06359ea29e08d6f9f563566d2a0f15ea9681893", size = 60174, upload-time = "2025-04-15T14:04:56.689Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/99/54e15e833757cb329da14e38e53f94bcf06395904e292e3c8c239c819d56/igor2-0.5.12-py3-none-any.whl", hash = "sha256:1d99b30a3b82710578aafb21fbe02572c59f77ad4daba6d13a952115d200bac6", size = 32427, upload-time = "2025-04-15T14:04:55.002Z" },
 ]
 
 [[package]]
@@ -2074,6 +2100,8 @@ dev = [
 ]
 plugins = [
     { name = "pynxtools" },
+    { name = "pynxtools-xps" },
+    { name = "pynxtools-xrd" },
 ]
 
 [package.metadata]
@@ -2081,6 +2109,8 @@ requires-dist = [
     { name = "nomad-lab", extras = ["dev", "infrastructure", "parsing"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["infrastructure", "parsing"], specifier = ">=1.3.4" },
     { name = "pynxtools", marker = "extra == 'plugins'", specifier = "==0.10.9" },
+    { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.2" },
+    { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.5" },
     { name = "setuptools" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
@@ -2912,6 +2942,38 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d4/09/a257b2d333beabe0fdbcd68ae333bd58e2974be0d11240b93aab56149d78/pynxtools-0.10.9.tar.gz", hash = "sha256:84ca55abe87c65dce77763f65d9778dcbd822ed4ec9d1b029512b4dd977718b8", size = 5361665, upload-time = "2025-06-30T09:04:03.023Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/16/00/b67b8af443d4faf252427622c37fc9e9244752da37365044e8232f8b98b2/pynxtools-0.10.9-py3-none-any.whl", hash = "sha256:1074ef3a6e28204eee874b6732d2975709b7a0e4ce1c0a940725f0d3af84559a", size = 5733706, upload-time = "2025-06-30T09:04:00.944Z" },
+]
+
+[[package]]
+name = "pynxtools-xps"
+version = "0.5.2"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "h5py" },
+    { name = "igor2" },
+    { name = "numpy" },
+    { name = "pint" },
+    { name = "pynxtools" },
+    { name = "xarray" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/15/c7/dea75538fa1798b68862c2a8d675be91f1ba223b1679f12142946f4c0430/pynxtools_xps-0.5.2.tar.gz", hash = "sha256:e8791a9d70c02b08779c641d6341d7eeac65c70ef44edf2f300d7a54fccc49e0", size = 5495136, upload-time = "2025-05-23T16:56:33.454Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/23/f3cbb5b38b36791002fe920dd3a3ba40494d6a0a9645e342345c59e958cd/pynxtools_xps-0.5.2-py3-none-any.whl", hash = "sha256:1fe9a4a02f1b6c387d8b80e544d95e064300bce8563078cbfde07e0ea7e60765", size = 5572493, upload-time = "2025-05-23T16:56:31.569Z" },
+]
+
+[[package]]
+name = "pynxtools-xrd"
+version = "0.0.5"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "fairmat-readers-xrd" },
+    { name = "pint" },
+    { name = "pynxtools" },
+    { name = "xmltodict" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7e/e1/f3775ca3d2de7a2d3a877d0edc5ce2e1606548c9a8244346068b1319ec1a/pynxtools_xrd-0.0.5.tar.gz", hash = "sha256:3d84bff04009e8fa7160c580737058a7d9c071823d2ed263e2f444bb85c7ce83", size = 119573, upload-time = "2025-03-25T16:13:27.162Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0f/28/c702fc5a2329434abaac58d9db631d82be338010c6beeab93dda4fe94704/pynxtools_xrd-0.0.5-py3-none-any.whl", hash = "sha256:805161f853587ae1f1230e5841ac44a4f8381742d7adda962050fe5f8b813f7c", size = 14722, upload-time = "2025-03-25T16:13:25.682Z" },
 ]
 
 [[package]]
@@ -4276,6 +4338,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/89/c0/edb2f6cfafa5369106f927409f6211141c3296c14877cc634d8ee4c970a4/xarray-2025.1.2.tar.gz", hash = "sha256:e7675c79ac69d274dd3b3c5450ce57176928d2792947576251ed1c7df1783224", size = 3271214, upload-time = "2025-01-31T07:37:12.385Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/05/79/4e19100342fe13d69fd6e77b343e2269924fec681258e2ea21b55576aad2/xarray-2025.1.2-py3-none-any.whl", hash = "sha256:a7ad6a36c6e0becd67f8aff6a7808d20e4bdcd344debb5205f0a34b1a4a7f8d6", size = 1247773, upload-time = "2025-01-31T07:37:09.811Z" },
+]
+
+[[package]]
+name = "xmltodict"
+version = "0.13.0"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/39/0d/40df5be1e684bbaecdb9d1e0e40d5d482465de6b00cbb92b84ee5d243c7f/xmltodict-0.13.0.tar.gz", hash = "sha256:341595a488e3e01a85a9d8911d8912fd922ede5fecc4dce437eb4b6c8d037e56", size = 33813, upload-time = "2022-05-08T07:00:04.916Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/db/fd0326e331726f07ff7f40675cd86aa804bfd2e5016c727fa761c934990e/xmltodict-0.13.0-py2.py3-none-any.whl", hash = "sha256:aa89e8fd76320154a40d19a0df04a4695fb9dc5ba977cbb68ab3e4eb225e7852", size = 9971, upload-time = "2022-05-08T07:00:02.898Z" },
 ]
 
 [[package]]
