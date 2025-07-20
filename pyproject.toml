@@ -29,6 +29,8 @@ repository = "https://github.com/nikolai-kraus/image-test"
 plugins = [
   "pynxtools==0.10.9",
   "pynxtools-xps>=0.5.2",
+  "pynxtools-em>=0.3.2",
+  "pynxtools-apm>=0.2.3",
   "pynxtools-xrd>=0.0.5",
   "pynxtools-igor>=0.1.2",
   "pynxtools-mpes>=0.2.4",
