@@ -3155,7 +3155,6 @@ plugins = [
     { name = "pynxtools-apm" },
     { name = "pynxtools-em" },
     { name = "pynxtools-igor" },
-    { name = "pynxtools-mpes" },
     { name = "pynxtools-xps" },
     { name = "pynxtools-xrd" },
 ]
@@ -3168,7 +3167,6 @@ requires-dist = [
     { name = "pynxtools-apm", marker = "extra == 'plugins'", specifier = ">=0.2.3" },
     { name = "pynxtools-em", marker = "extra == 'plugins'", specifier = ">=0.3.2" },
     { name = "pynxtools-igor", marker = "extra == 'plugins'", specifier = ">=0.1.2" },
-    { name = "pynxtools-mpes", marker = "extra == 'plugins'", specifier = ">=0.2.4" },
     { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.2" },
     { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.5" },
     { name = "setuptools" },
@@ -4357,20 +4355,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/0e/12/298edaf7a111caec33c978320642e591b4534e209a3925d2a9412ae76688/pynxtools_igor-0.1.2.tar.gz", hash = "sha256:d07ff0b5f9002e332bc6710727b1ae77e60c8539232f2ef13a6cedba4e58f48b", size = 8835491, upload-time = "2025-05-23T16:36:11.009Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/48/aa/1e77acb760d44ec48f27f82752ab4507654b13053040e3df1926ddbf3b2b/pynxtools_igor-0.1.2-py3-none-any.whl", hash = "sha256:d1c8ddb19669d79f4dc38bc0e4898ee5f113ca3972f2ab7f58aca3d9f309d0d3", size = 8827745, upload-time = "2025-05-23T16:36:08.544Z" },
-]
-
-[[package]]
-name = "pynxtools-mpes"
-version = "0.2.4"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "h5py" },
-    { name = "pynxtools" },
-    { name = "xarray" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/0d/07/4df6cd4046d27c952c9152f8bdebbb6785c60a386eaf44d5c8a309174b0a/pynxtools_mpes-0.2.4.tar.gz", hash = "sha256:c4eb9d984fe2a20f7c28a12a98513a53c39e1cb0dce77f3e72059dee381164a9", size = 33416, upload-time = "2025-05-23T16:36:29.364Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f9/ed/58d4021e145cd1f6d8cba463f9f8f0c76f4df8adf37a79358cf422efc738/pynxtools_mpes-0.2.4-py3-none-any.whl", hash = "sha256:d03bdd5c2b7c629476ba4c8f6c03db15adc909b9d362b88420b658c8e26d2a65", size = 40461, upload-time = "2025-05-23T16:36:27.733Z" },
 ]
 
 [[package]]
