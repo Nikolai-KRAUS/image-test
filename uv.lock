@@ -1163,20 +1163,6 @@ wheels = [
 ]
 
 [[package]]
-name = "fairmat-readers-xrd"
-version = "0.0.7"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "numpy" },
-    { name = "pint" },
-    { name = "xmltodict" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/13/e3/ed8e3e752df895429a1082c4b27a303c8efe2caabe5c74b58b6c216a1587/fairmat_readers_xrd-0.0.7.tar.gz", hash = "sha256:046249b27a52dd4d81a798040bedb37fc20697bfb82e467cafb8abf1e2922f88", size = 6856326, upload-time = "2024-09-11T15:34:28.099Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/72/b6/f178c199628cfb55799401d5e98f63040ba12f79521eecddb177956ea1ce/fairmat_readers_xrd-0.0.7-py3-none-any.whl", hash = "sha256:d33699a9a086cf34341d057ac224835940cb40d32a65495d6f26f05b79b51428", size = 22308, upload-time = "2024-09-11T15:34:26.204Z" },
-]
-
-[[package]]
 name = "fastapi"
 version = "0.115.11"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -3155,7 +3141,6 @@ plugins = [
     { name = "pynxtools-apm" },
     { name = "pynxtools-em" },
     { name = "pynxtools-xps" },
-    { name = "pynxtools-xrd" },
 ]
 
 [package.metadata]
@@ -3166,7 +3151,6 @@ requires-dist = [
     { name = "pynxtools-apm", marker = "extra == 'plugins'", specifier = ">=0.2.3" },
     { name = "pynxtools-em", marker = "extra == 'plugins'", specifier = ">=0.3.2" },
     { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.2" },
-    { name = "pynxtools-xrd", marker = "extra == 'plugins'", specifier = ">=0.0.5" },
     { name = "setuptools" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
@@ -4355,21 +4339,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/15/c7/dea75538fa1798b68862c2a8d675be91f1ba223b1679f12142946f4c0430/pynxtools_xps-0.5.2.tar.gz", hash = "sha256:e8791a9d70c02b08779c641d6341d7eeac65c70ef44edf2f300d7a54fccc49e0", size = 5495136, upload-time = "2025-05-23T16:56:33.454Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0e/23/f3cbb5b38b36791002fe920dd3a3ba40494d6a0a9645e342345c59e958cd/pynxtools_xps-0.5.2-py3-none-any.whl", hash = "sha256:1fe9a4a02f1b6c387d8b80e544d95e064300bce8563078cbfde07e0ea7e60765", size = 5572493, upload-time = "2025-05-23T16:56:31.569Z" },
-]
-
-[[package]]
-name = "pynxtools-xrd"
-version = "0.0.5"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "fairmat-readers-xrd" },
-    { name = "pint" },
-    { name = "pynxtools" },
-    { name = "xmltodict" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/7e/e1/f3775ca3d2de7a2d3a877d0edc5ce2e1606548c9a8244346068b1319ec1a/pynxtools_xrd-0.0.5.tar.gz", hash = "sha256:3d84bff04009e8fa7160c580737058a7d9c071823d2ed263e2f444bb85c7ce83", size = 119573, upload-time = "2025-03-25T16:13:27.162Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0f/28/c702fc5a2329434abaac58d9db631d82be338010c6beeab93dda4fe94704/pynxtools_xrd-0.0.5-py3-none-any.whl", hash = "sha256:805161f853587ae1f1230e5841ac44a4f8381742d7adda962050fe5f8b813f7c", size = 14722, upload-time = "2025-03-25T16:13:25.682Z" },
 ]
 
 [[package]]
