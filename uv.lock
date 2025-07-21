@@ -1365,18 +1365,6 @@ wheels = [
 ]
 
 [[package]]
-name = "igor2"
-version = "0.5.12"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "numpy" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/5e/aa/2aadb0fca3dd2361ca6ce613fe4a0827114d63a42956c2b68b3f59f2c784/igor2-0.5.12.tar.gz", hash = "sha256:5a284ac3b7aa6a8a59f28509d06359ea29e08d6f9f563566d2a0f15ea9681893", size = 60174, upload-time = "2025-04-15T14:04:56.689Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/83/99/54e15e833757cb329da14e38e53f94bcf06395904e292e3c8c239c819d56/igor2-0.5.12-py3-none-any.whl", hash = "sha256:1d99b30a3b82710578aafb21fbe02572c59f77ad4daba6d13a952115d200bac6", size = 32427, upload-time = "2025-04-15T14:04:55.002Z" },
-]
-
-[[package]]
 name = "imagesize"
 version = "1.4.1"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -2740,7 +2728,6 @@ dev = [
 plugins = [
     { name = "pynxtools" },
     { name = "pynxtools-apm" },
-    { name = "pynxtools-xps" },
 ]
 
 [package.metadata]
@@ -2749,7 +2736,6 @@ requires-dist = [
     { name = "nomad-lab", extras = ["infrastructure", "parsing"], specifier = ">=1.3.4" },
     { name = "pynxtools", marker = "extra == 'plugins'", specifier = "==0.10.9" },
     { name = "pynxtools-apm", marker = "extra == 'plugins'", specifier = ">=0.2.3" },
-    { name = "pynxtools-xps", marker = "extra == 'plugins'", specifier = ">=0.5.2" },
     { name = "setuptools" },
 ]
 provides-extras = ["plugins", "jupyter", "dev"]
@@ -3715,23 +3701,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/51/be/49f9498f2f3317c5ae13363257ef7d854cf33c9f58a3a1b80e09f77ee318/pynxtools_apm-0.2.3.tar.gz", hash = "sha256:741bce07646be4e8e70182ea05f10b3ec3067109b5fe5a62527797611b905380", size = 52878, upload-time = "2025-03-25T15:44:34.754Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b4/f2/8c5758aa6e0cf5f6ad1d9f7f1d9eb7dc7b0e490e936eecd784c1bd12f525/pynxtools_apm-0.2.3-py3-none-any.whl", hash = "sha256:8de37d9ff29ea3d9b7a5a6976a1b10dff38cd4894c4669fbf45acde987dc9d73", size = 69216, upload-time = "2025-03-25T15:44:33.542Z" },
-]
-
-[[package]]
-name = "pynxtools-xps"
-version = "0.5.2"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "h5py" },
-    { name = "igor2" },
-    { name = "numpy" },
-    { name = "pint" },
-    { name = "pynxtools" },
-    { name = "xarray" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/15/c7/dea75538fa1798b68862c2a8d675be91f1ba223b1679f12142946f4c0430/pynxtools_xps-0.5.2.tar.gz", hash = "sha256:e8791a9d70c02b08779c641d6341d7eeac65c70ef44edf2f300d7a54fccc49e0", size = 5495136, upload-time = "2025-05-23T16:56:33.454Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0e/23/f3cbb5b38b36791002fe920dd3a3ba40494d6a0a9645e342345c59e958cd/pynxtools_xps-0.5.2-py3-none-any.whl", hash = "sha256:1fe9a4a02f1b6c387d8b80e544d95e064300bce8563078cbfde07e0ea7e60765", size = 5572493, upload-time = "2025-05-23T16:56:31.569Z" },
 ]
 
 [[package]]
