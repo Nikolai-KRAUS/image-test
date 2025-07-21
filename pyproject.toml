@@ -28,7 +28,6 @@ repository = "https://github.com/nikolai-kraus/image-test"
 [project.optional-dependencies]
 plugins = [
   "pynxtools==0.10.9",
-  "pynxtools-xps>=0.5.2",
   "pynxtools-apm>=0.2.3",
 ]
 jupyter = []
