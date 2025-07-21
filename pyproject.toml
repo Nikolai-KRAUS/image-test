@@ -29,7 +29,7 @@ repository = "https://github.com/nikolai-kraus/image-test"
 plugins = [
   "pynxtools==0.10.9",
   "pynxtools-xps>=0.5.2",
-  "pynxtools-em>=0.3.2",
+  "pynxtools-apm>=0.2.3",
 ]
 jupyter = []
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
