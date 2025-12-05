@@ -91,6 +91,25 @@ services:
       start_period: 30s
       test: bash /opt/keycloak/bin/healthcheck_keycloak.sh || exit 1
 
+<<<<<<< HEAD
+=======
+  temporal:
+    container_name: nomad_temporal
+    image: ghcr.io/fairmat-nfdi/temporal-dev-server:v1.4.0
+    ports:
+      - 7233:7233
+    healthcheck:
+      test: >
+        bash -c '
+          temporal operator cluster health --address $$(hostname -i):7233 |
+          grep -q "SERVING"
+        '
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+>>>>>>> template/main
   app:
     restart: unless-stopped
     image: ${APP_IMAGE:-ghcr.io/fairmat-nfdi/nomad-distro-template:main}
@@ -109,11 +128,19 @@ services:
       ]
     environment:
       NOMAD_SERVICE: nomad_distro_test
+<<<<<<< HEAD
+=======
+      NOMAD_SERVICES_MODE: development
+>>>>>>> template/main
       NOMAD_SERVICES_API_PORT: 8000
       NOMAD_FS_EXTERNAL_WORKING_DIRECTORY: "$PWD"
       NOMAD_RABBITMQ_HOST: rabbitmq
       NOMAD_ELASTIC_HOST: elastic
       NOMAD_MONGO_HOST: mongo
+<<<<<<< HEAD
+=======
+      NOMAD_TEMPORAL_HOST: temporal
+>>>>>>> template/main
       NOMAD_LOGSTASH_HOST: logtransfer
     depends_on:
       rabbitmq:
@@ -124,6 +151,11 @@ services:
         condition: service_healthy
       keycloak:
         condition: service_healthy
+<<<<<<< HEAD
+=======
+      temporal:
+        condition: service_healthy
+>>>>>>> template/main
     volumes:
       - ./nomad.yaml:/app/nomad.yaml
     ports:
@@ -137,7 +169,11 @@ services:
         - "http://localhost:8000/-/health"
       interval: 10s
       timeout: 10s
+<<<<<<< HEAD
       retries: 30
+=======
+      retries: 60
+>>>>>>> template/main
       start_period: 10s
 
   jupyter:
@@ -147,6 +183,20 @@ services:
     container_name: jupyter
     ports:
       - 8888:8888
+<<<<<<< HEAD
+=======
+    healthcheck:
+      test:
+        - "CMD"
+        - "curl"
+        - "--fail"
+        - "--silent"
+        - "http://localhost:8888/"
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 10s
+>>>>>>> template/main
 
 volumes:
   mongo:
