@@ -14,7 +14,7 @@ north:
 <<<<<<< HEAD
         image: ghcr.io/nikolai-kraus/image-test/jupyter:main
 =======
-        image: ghcr.io/fairmat-nfdi/nomad-distro-template/jupyter:main
+        image: ghcr.io/nikolai-kraus/image-test/jupyter:main
 >>>>>>> template/main
 
 meta:
